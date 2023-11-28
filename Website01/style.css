@@ -2,6 +2,7 @@
 /* Nimbus Sans L  */
 
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     font-family: "Nimbus Sans L";
@@ -45,7 +46,6 @@ body {
     display: flex;
     align-items: center;
 }
-
 
 .ncenter {
     justify-content: center;
@@ -221,7 +221,6 @@ h5 {
     background-size: cover;
 }
 
-
 .imagesec {
     padding: 1vw 4vw 0vw 4vw;
     width: 100%;
@@ -243,7 +242,6 @@ h5 {
     object-fit: cover;
     height: 35vw;
 }
-
 
 .imgsection1 p {
     line-height: 1.4vw;
@@ -292,6 +290,7 @@ h5 {
 }
 
 .slastleft {
+    position: relative;
     height: 90%;
     width: 70%;
 }
@@ -300,7 +299,16 @@ h5 {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: 0% 75%;
+}
+
+#slastimg1 {
+    position: absolute;
+    z-index: 2;
+}
+
+#slastimg2 {
+    position: absolute;
+    z-index: 1;
 }
 
 .slastright {
@@ -324,7 +332,7 @@ h5 {
 }
 
 .package {
-   padding-top: 2vw;
+    padding-top: 2vw;
 }
 
 #lastsection {
@@ -339,6 +347,7 @@ h5 {
 
 #lastsection video {
     position: absolute;
+    opacity: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -385,4 +394,3 @@ h5 {
 .active {
     opacity: 1;
 }
-
